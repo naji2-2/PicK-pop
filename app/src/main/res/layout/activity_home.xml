@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who’s there?"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#00A3DC"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOYNEXTDOOR"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#00A3DC"/>
+
+        </LinearLayout>
+
+        <!-- 멤버 보러 가기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/member"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="멤버 보러 가기   "
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="#FAFAFA">
+
+                <Gallery
+                    android:id="@+id/gallery1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spacing="3dp"/>
+
+                <ImageView
+                    android:id="@+id/member_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 앨범 보러 가기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/album"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앨범 보러 가기   "
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="#FAFAFA">
+
+                <Gallery
+                    android:id="@+id/gallery2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spacing="3dp"/>
+
+                <ImageView
+                    android:id="@+id/album_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 앨범 보러 가기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="노래 들으러 가기   "
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:background="#FAFAFA"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <ListView
+                        android:id="@+id/music_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="10dp"-->
+            <!--            android:background="#FAFAFA"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/iv_img_resource"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_margin="10dp"-->
+            <!--                android:src="@drawable/album_image" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/music_title"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:text="노래 제목"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--        </LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

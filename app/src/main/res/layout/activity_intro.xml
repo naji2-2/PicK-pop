@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/boynextdoor_intro_image"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who’s there?"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#00A3DC"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOYNEXTDOOR"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#00A3DC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/joinBtn"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="20dp"
+                android:text="회원가입"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#00A3DC"/>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:text="로그인"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#00A3DC"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nosignBtn"
+            android:layout_marginTop="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계정 없이 시작하기"
+            android:textSize="17dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

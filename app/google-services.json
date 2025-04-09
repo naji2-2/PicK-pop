@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "762050178598",
+    "firebase_url": "https://pick-pop-db-default-rtdb.firebaseio.com",
+    "project_id": "pick-pop-db",
+    "storage_bucket": "pick-pop-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762050178598:android:48fa2891e2025bfbdd40e7",
+        "android_client_info": {
+          "package_name": "com.example.pick_pop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSGjqyVwOYA5uTEfnmA7MLIoBuiT3SFzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
